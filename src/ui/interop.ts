@@ -193,7 +193,7 @@ export function toEventInput(
             if (!start) {
                 return null;
             }
-            let end = undefined;
+            let end: any = undefined;
             if (frontmatter.endTime) {
                 end = combineDateTimeStrings(
                     frontmatter.endDate || frontmatter.date,
